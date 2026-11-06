@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealWork 생존 온보딩 키트</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11/dist/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/github.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f6f8fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .nav-buttons button {
+            padding: 8px 16px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .nav-buttons button:hover {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .nav-buttons button.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        #content {
+            line-height: 1.8;
+        }
+        
+        #content h1 { font-size: 2em; margin: 30px 0 20px 0; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        #content h2 { font-size: 1.6em; margin: 25px 0 15px 0; color: #007bff; }
+        #content h3 { font-size: 1.3em; margin: 20px 0 12px 0; }
+        #content h4 { font-size: 1.1em; margin: 15px 0 10px 0; }
+        #content p { margin: 12px 0; }
+        #content ul, #content ol { margin: 12px 0 12px 30px; }
+        #content li { margin: 6px 0; }
+        #content code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; }
+        #content pre { background: #f4f4f4; padding: 15px; border-radius: 4px; overflow-x: auto; margin: 15px 0; }
+        #content pre code { background: none; padding: 0; }
+        #content blockquote { border-left: 4px solid #007bff; margin: 15px 0; padding-left: 15px; color: #666; }
+        #content table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        #content table td, #content table th { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        #content table th { background: #f4f4f4; font-weight: bold; }
+        #content a { color: #007bff; text-decoration: none; }
+        #content a:hover { text-decoration: underline; }
+        
+        .loading {
+            text-align: center;
+            color: #666;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-buttons" id="navButtons"></div>
+        <div id="content" class="loading">로딩 중...</div>
+    </div>
+
+    <script>
+        // 파일 목록
+        const files = [
+            { name: 'README', path: 'README.md' },
+            { name: '1단계', path: 'Stage1_Basic_Understanding.md' },
+            { name: '2단계', path: 'Stage2_Company_Cases_Culture.md' },
+            { name: '3단계', path: 'Stage3_Workshop_SOP_Learning.md' },
+            { name: 'FAQ', path: 'FAQ_30Questions.md' },
+            { name: '팀 소개', path: 'Team_Members_Introduction.md' },
+            { name: '용어사전', path: 'Glossary_RealWork_Terms.md' },
+            { name: '프로젝트', path: 'Project_Case_Study_Practice.md' },
+            { name: '사수준비', path: 'Mentor_Onboarding_Preparation.md' },
+        ];
+        
+        let currentFile = 'README.md';
+        
+        // 네비게이션 버튼 생성
+        const navButtons = document.getElementById('navButtons');
+        files.forEach(file => {
+            const btn = document.createElement('button');
+            btn.textContent = file.name;
+            btn.onclick = () => loadFile(file.path, btn);
+            if (file.path === currentFile) btn.classList.add('active');
+            navButtons.appendChild(btn);
+        });
+        
+        // 파일 로드 및 렌더링
+        async function loadFile(path, btn) {
+            try {
+                document.getElementById('content').innerHTML = '<div class="loading">로딩 중...</div>';
+                
+                // 모든 버튼에서 active 제거
+                document.querySelectorAll('.nav-buttons button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                currentFile = path;
+                const response = await fetch(path);
+                
+                if (!response.ok) throw new Error(`파일을 찾을 수 없습니다: ${path}`);
+                
+                const markdown = await response.text();
+                const html = marked.parse(markdown);
+                document.getElementById('content').innerHTML = html;
+                
+                // 코드 하이라이팅
+                document.querySelectorAll('pre code').forEach(block => {
+                    hljs.highlightElement(block);
+                });
+                
+                // 페이지 상단으로 이동
+                window.scrollTo(0, 0);
+            } catch (error) {
+                document.getElementById('content').innerHTML = `<div class="loading">오류: ${error.message}</div>`;
+            }
+        }
+        
+        // 초기 파일 로드
+        loadFile('README.md', document.querySelector('.nav-buttons button'));
+    </script>
+</body>
+</html>
