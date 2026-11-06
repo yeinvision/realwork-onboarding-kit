@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealWork 생존 온보딩 키트</title>
+    <title>RealWork ?�존 ?�보???�트</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/highlight.js@11/dist/highlight.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/atom-one-dark.min.css">
@@ -221,7 +221,7 @@
         }
 
         #content ul li:before {
-            content: "▸ ";
+            content: "??";
             color: var(--primary);
             font-weight: bold;
             margin-right: 8px;
@@ -424,7 +424,7 @@
                 <div class="logo">
                     <img src="logo.png" alt="RealWork Logo">
                 </div>
-                <div class="logo-text">생존 온보딩 키트</div>
+                <div class="logo-text">?�존 ?�보???�트</div>
             </div>
             <div class="nav-menu" id="navMenu"></div>
         </div>
@@ -432,13 +432,13 @@
         <!-- MAIN -->
         <div class="main">
             <div class="header">
-                <h1>🚀 RealWork 생존 온보딩 키트</h1>
-                <p>신입을 위한 자기주도 학습 플랫폼</p>
+                <h1>?? RealWork ?�존 ?�보???�트</h1>
+                <p>?�입???�한 ?�기주도 ?�습 ?�랫??/p>
             </div>
 
             <div class="content">
                 <div class="content-box">
-                    <div id="content" class="loading">로딩 중...</div>
+                    <div id="content" class="loading">로딩 �?..</div>
                 </div>
             </div>
         </div>
@@ -446,20 +446,20 @@
 
     <script>
         const files = [
-            { name: '📖 README', path: 'README.md' },
-            { name: '1️⃣ 1단계', path: 'Stage1_Basic_Understanding.md' },
-            { name: '2️⃣ 2단계', path: 'Stage2_Company_Cases_Culture.md' },
-            { name: '3️⃣ 3단계', path: 'Stage3_Workshop_SOP_Learning.md' },
-            { name: '❓ FAQ', path: 'FAQ_30Questions.md' },
-            { name: '👥 팀 소개', path: 'Team_Members_Introduction.md' },
-            { name: '📚 용어사전', path: 'Glossary_RealWork_Terms.md' },
-            { name: '📊 프로젝트', path: 'Project_Case_Study_Practice.md' },
-            { name: '🎓 사수준비', path: 'Mentor_Onboarding_Preparation.md' },
+            { name: '?�� README', path: 'README.md' },
+            { name: '1️⃣ 1?�계', path: 'Stage1_Basic_Understanding.md' },
+            { name: '2️⃣ 2?�계', path: 'Stage2_Company_Cases_Culture.md' },
+            { name: '3️⃣ 3?�계', path: 'Stage3_Workshop_SOP_Learning.md' },
+            { name: '??FAQ', path: 'FAQ_30Questions.md' },
+            { name: '?�� ?� ?�개', path: 'Team_Members_Introduction.md' },
+            { name: '?�� ?�어?�전', path: 'Glossary_RealWork_Terms.md' },
+            { name: '?�� ?�로?�트', path: 'Project_Case_Study_Practice.md' },
+            { name: '?�� ?�수준�?, path: 'Mentor_Onboarding_Preparation.md' },
         ];
 
         let currentFile = 'README.md';
 
-        // 네비게이션 메뉴 생성
+        // ?�비게이??메뉴 ?�성
         const navMenu = document.getElementById('navMenu');
         files.forEach((file, idx) => {
             const btn = document.createElement('button');
@@ -470,27 +470,27 @@
             navMenu.appendChild(btn);
         });
 
-        // 파일 로드
+        // ?�일 로드
         async function loadFile(path, btn) {
             try {
-                document.getElementById('content').innerHTML = '<div class="loading">⏳ 로딩 중...</div>';
+                document.getElementById('content').innerHTML = '<div class="loading">??로딩 �?..</div>';
                 
-                // 모든 버튼 비활성화
+                // 모든 버튼 비활?�화
                 document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 
                 currentFile = path;
 
                 const response = await fetch(path);
-                if (!response.ok) throw new Error(`파일을 찾을 수 없습니다 (${response.status}): ${path}`);
+                if (!response.ok) throw new Error(`?�일??찾을 ???�습?�다 (${response.status}): ${path}`);
 
                 const markdown = await response.text();
-                if (!markdown || markdown.trim() === '') throw new Error(`파일이 비어있습니다: ${path}`);
+                if (!markdown || markdown.trim() === '') throw new Error(`?�일??비어?�습?�다: ${path}`);
 
                 const html = marked.parse(markdown);
                 document.getElementById('content').innerHTML = html;
 
-                // 코드 하이라이팅
+                // 코드 ?�이?�이??
                 document.querySelectorAll('pre code').forEach(block => {
                     try {
                         hljs.highlightElement(block);
@@ -499,14 +499,14 @@
                     }
                 });
 
-                // 스크롤 상단으로
+                // ?�크�??�단?�로
                 document.querySelector('.main').scrollTop = 0;
 
             } catch (error) {
                 console.error('Load error:', error);
                 document.getElementById('content').innerHTML = `
                     <div class="error">
-                        <strong>❌ 파일 로드 실패</strong><br/>
+                        <strong>???�일 로드 ?�패</strong><br/>
                         ${error.message}<br/><br/>
                         <small>경로: ${path}</small>
                     </div>
@@ -521,4 +521,6 @@
         });
     </script>
 </body>
+<!-- v2 -->
 </html>
+
