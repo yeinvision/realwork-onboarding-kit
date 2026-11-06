@@ -2,11 +2,16 @@
   "buildCommand": "",
   "installCommand": "",
   "outputDirectory": ".",
-  "framework": null,
-  "rewrites": [
+  "framework": "static",
+  "headers": [
     {
-      "source": "/",
-      "destination": "/README.md"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
     }
   ]
 }
