@@ -414,7 +414,11 @@
         <div class="sidebar">
             <div class="logo-section">
                 <div class="logo">
-                    <img src="logo.png" alt="RealWork Logo">
+                    <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="48" stroke="#00d4d4" stroke-width="3" fill="none"/>
+                        <path d="M50 25L75 75H25Z" fill="#00d4d4" opacity="0.8"/>
+                        <circle cx="50" cy="50" r="15" fill="#00d4d4" opacity="0.4"/>
+                    </svg>
                 </div>
                 <div class="logo-text">Onboarding Kit</div>
             </div>
@@ -435,47 +439,66 @@
         </div>
     </div>
 
+    <script src="content.js"></script>
     <script>
         const files = [
-            { name: 'README', path: '00_START_HERE.txt' },
-            { name: '1. Stage 1', path: 'Stage1_Basic_Understanding.txt' },
-            { name: '2. Stage 2', path: 'Stage2_Company_Cases_Culture.txt' },
-            { name: '3. Stage 3', path: 'Stage3_Workshop_SOP_Learning.txt' },
-            { name: 'FAQ', path: 'FAQ_30Questions.txt' },
-            { name: 'Team', path: 'Team_Members_Introduction.txt' },
-            { name: 'Terms', path: 'Glossary_RealWork_Terms.txt' },
-            { name: 'Cases', path: 'Project_Case_Study_Practice.txt' },
-            { name: 'Mentor', path: 'Mentor_Onboarding_Preparation.txt' },
+            { name: 'README', key: 'START_HERE' },
+            { name: '1. Stage 1', key: 'STAGE1' },
+            { name: '2. Stage 2', key: 'STAGE2' },
+            { name: '3. Stage 3', key: 'STAGE3' },
+            { name: 'FAQ', key: 'FAQ' },
+            { name: 'Team', key: 'TEAM' },
+            { name: 'Terms', key: 'GLOSSARY' },
+            { name: 'Cases', key: 'CASES' },
+            { name: 'Mentor', key: 'MENTOR' },
         ];
 
-        let currentFile = '00_START_HERE.txt';
+        let currentKey = 'START_HERE';
+
+        function decodeContent(base64) {
+            try {
+                const bytes = atob(base64);
+                const charArray = new Uint8Array(bytes.length);
+                for (let i = 0; i < bytes.length; i++) {
+                    charArray[i] = bytes.charCodeAt(i);
+                }
+                const decoder = new TextDecoder('utf-8');
+                return decoder.decode(charArray);
+            } catch (e) {
+                console.error('Decode error:', e);
+                return '';
+            }
+        }
 
         const navMenu = document.getElementById('navMenu');
-        files.forEach((file, idx) => {
+        files.forEach((file) => {
             const btn = document.createElement('button');
             btn.className = 'nav-item';
-            if (file.path === currentFile) btn.classList.add('active');
+            if (file.key === currentKey) btn.classList.add('active');
             btn.textContent = file.name;
-            btn.onclick = () => loadFile(file.path, btn);
+            btn.onclick = () => loadContent(file.key, btn);
             navMenu.appendChild(btn);
         });
 
-        async function loadFile(path, btn) {
+        function loadContent(key, btn) {
             try {
                 document.getElementById('content').innerHTML = '<div class="loading">Loading...</div>';
                 
                 document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 
-                currentFile = path;
+                currentKey = key;
 
-                const response = await fetch(path);
-                if (!response.ok) throw new Error(`File not found (${response.status}): ${path}`);
+                if (!CONTENT[key]) {
+                    throw new Error(`Content not found for key: ${key}`);
+                }
 
-                const text = await response.text();
-                if (!text || text.trim() === '') throw new Error(`File is empty: ${path}`);
+                const markdown = decodeContent(CONTENT[key]);
+                if (!markdown || markdown.trim() === '') {
+                    throw new Error(`Content is empty for key: ${key}`);
+                }
 
-                const html = marked.parse(text);
+                const html = marked.parse(markdown);
                 document.getElementById('content').innerHTML = html;
 
                 document.querySelectorAll('pre code').forEach(block => {
@@ -486,15 +509,15 @@
                     }
                 });
 
-                document.querySelector('.main').scrollTop = 0;
+                document.querySelector('.content').scrollTop = 0;
 
             } catch (error) {
                 console.error('Load error:', error);
                 document.getElementById('content').innerHTML = `
                     <div class="error">
-                        <strong>Error loading file</strong><br/>
+                        <strong>Error loading content</strong><br/>
                         ${error.message}<br/><br/>
-                        <small>Path: ${path}</small>
+                        <small>Key: ${key}</small>
                     </div>
                 `;
             }
@@ -502,7 +525,7 @@
 
         window.addEventListener('load', () => {
             const firstBtn = document.querySelector('.nav-item');
-            if (firstBtn) loadFile('00_START_HERE.txt', firstBtn);
+            if (firstBtn) loadContent('START_HERE', firstBtn);
         });
     </script>
 </body>
