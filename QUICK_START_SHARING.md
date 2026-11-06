@@ -1,351 +1,351 @@
-# 📱 RealWork 온보딩 키트 - 공유 가능 링크
+﻿# ?벑 RealWork ?⑤낫???ㅽ듃 - 怨듭쑀 媛??留곹겕
 
-## 🎯 **배포 후 공유할 수 있는 링크**
+## ?렞 **諛고룷 ??怨듭쑀?????덈뒗 留곹겕**
 
 ---
 
-## ⚡ **빠른 배포 가이드 (3단계, 10분)**
+## ??**鍮좊Ⅸ 諛고룷 媛?대뱶 (3?④퀎, 10遺?**
 
-### Step 1️⃣: GitHub에 업로드 (5분)
+### Step 1截뤴깵: GitHub???낅줈??(5遺?
 
 ```powershell
-# PowerShell 또는 CMD에서 실행
+# PowerShell ?먮뒗 CMD?먯꽌 ?ㅽ뻾
 
 cd "C:\Users\PC\Desktop\Claude Code\dev\Onboarding"
 
-# Git 설정
+# Git ?ㅼ젙
 git init
 git add .
-git commit -m "Initial commit: RealWork 온보딩 키트 v1.0"
+git commit -m "Initial commit: RealWork ?⑤낫???ㅽ듃 v1.0"
 
-# GitHub 저장소 연결 (YOUR-USERNAME을 본인 GitHub 아이디로 변경)
+# GitHub ??μ냼 ?곌껐 (YOUR-USERNAME??蹂몄씤 GitHub ?꾩씠?붾줈 蹂寃?
 git remote add origin https://github.com/YOUR-USERNAME/realwork-onboarding-kit.git
 git branch -M main
 git push -u origin main
 ```
 
-✅ **결과**: GitHub 저장소 생성됨
-📍 **URL**: `https://github.com/YOUR-USERNAME/realwork-onboarding-kit`
+??**寃곌낵**: GitHub ??μ냼 ?앹꽦??
+?뱧 **URL**: `https://github.com/YOUR-USERNAME/realwork-onboarding-kit`
 
 ---
 
-### Step 2️⃣: Vercel 배포 (2분)
+### Step 2截뤴깵: Vercel 諛고룷 (2遺?
 
 ```
-1. Vercel.com 접속 (https://vercel.com)
-2. "New Project" 클릭
-3. "Import Git Repository" → GitHub 선택
-4. "realwork-onboarding-kit" 저장소 선택
-5. "Deploy" 클릭
-6. 🎉 자동 배포 완료!
+1. Vercel.com ?묒냽 (https://vercel.com)
+2. "New Project" ?대┃
+3. "Import Git Repository" ??GitHub ?좏깮
+4. "realwork-onboarding-kit" ??μ냼 ?좏깮
+5. "Deploy" ?대┃
+6. ?럦 ?먮룞 諛고룷 ?꾨즺!
 ```
 
-✅ **결과**: 웹사이트 자동 배포됨
-📍 **배포 URL**: `https://realwork-onboarding-kit.vercel.app`
+??**寃곌낵**: ?뱀궗?댄듃 ?먮룞 諛고룷??
+?뱧 **諛고룷 URL**: `https://realwork-onboarding-kit.vercel.app`
 
 ---
 
-### Step 3️⃣: 신입에게 공유 (3분)
+### Step 3截뤴깵: ?좎엯?먭쾶 怨듭쑀 (3遺?
 
 ```
-이메일 또는 Slack으로 전달:
+?대찓???먮뒗 Slack?쇰줈 ?꾨떖:
 
-🎉 RealWork 온보딩 키트
+?럦 RealWork ?⑤낫???ㅽ듃
 
-👉 https://realwork-onboarding-kit.vercel.app
+?몛 https://realwork-onboarding-kit.vercel.app
 
-또는 QR 코드 스캔
+?먮뒗 QR 肄붾뱶 ?ㅼ틪
 ```
 
-✅ **완료**: 신입이 바로 접근 가능!
+??**?꾨즺**: ?좎엯??諛붾줈 ?묎렐 媛??
 
 ---
 
-## 🔗 **공유할 수 있는 링크들**
+## ?뵕 **怨듭쑀?????덈뒗 留곹겕??*
 
-### 📌 **메인 링크**
+### ?뱦 **硫붿씤 留곹겕**
 ```
 https://realwork-onboarding-kit.vercel.app
 ```
-모든 신입과 선임이 접근할 수 있는 메인 사이트
+紐⑤뱺 ?좎엯怨??좎엫???묎렐?????덈뒗 硫붿씤 ?ъ씠??
 
 ---
 
-### 📚 **학습 콘텐츠 링크**
+### ?뱴 **?숈뒿 肄섑뀗痢?留곹겕**
 ```
-Stage 1: 기본 이해
+Stage 1: 湲곕낯 ?댄빐
 /stage1
 
-Stage 2: 사례 & 문화  
+Stage 2: ?щ? & 臾명솕  
 /stage2
 
-Stage 3: 워크숍 SOP
+Stage 3: ?뚰겕??SOP
 /stage3
 ```
 
 ---
 
-### 🎓 **보조 자료 링크**
+### ?럳 **蹂댁“ ?먮즺 留곹겕**
 ```
-FAQ (30개 질문)
+FAQ (30媛?吏덈Ц)
 /faq
 
-팀원 소개 (15명)
+????뚭컻 (15紐?
 /team
 
-용어사전 (40+ 용어)
+?⑹뼱?ъ쟾 (40+ ?⑹뼱)
 /glossary
 
-사례 분석 (3가지)
+?щ? 遺꾩꽍 (3媛吏)
 /cases
 
-선임 가이드
+?좎엫 媛?대뱶
 /mentor
 ```
 
 ---
 
-### 📋 **GitHub 저장소**
+### ?뱥 **GitHub ??μ냼**
 ```
 https://github.com/YOUR-USERNAME/realwork-onboarding-kit
 ```
-콘텐츠 관리 및 버전 관리
+肄섑뀗痢?愿由?諛?踰꾩쟾 愿由?
 
 ---
 
-## 📧 **신입에게 보낼 이메일 템플릿**
+## ?벁 **?좎엯?먭쾶 蹂대궪 ?대찓???쒗뵆由?*
 
 ```
-제목: 🎉 RealWork 온보딩 키트 - [이름]님을 환영합니다!
+?쒕ぉ: ?럦 RealWork ?⑤낫???ㅽ듃 - [?대쫫]?섏쓣 ?섏쁺?⑸땲??
 
-본문:
+蹂몃Ц:
 
-안녕하세요! [신입이름]님 👋
+?덈뀞?섏꽭?? [?좎엯?대쫫]???몝
 
-리얼워크에 오신 것을 환영합니다! 🎉
+由ъ뼹?뚰겕???ㅼ떊 寃껋쓣 ?섏쁺?⑸땲?? ?럦
 
-📖 온보딩 시작하기
-👉 https://realwork-onboarding-kit.vercel.app
+?뱰 ?⑤낫???쒖옉?섍린
+?몛 https://realwork-onboarding-kit.vercel.app
 
-또는 아래 QR코드를 스캔하세요:
-[QR 코드 이미지]
+?먮뒗 ?꾨옒 QR肄붾뱶瑜??ㅼ틪?섏꽭??
+[QR 肄붾뱶 ?대?吏]
 
-📚 온보딩 구조
-├─ Stage 1: 기본 이해 (1시간)
-├─ Stage 2: 사례 & 문화 (1시간)  
-└─ Stage 3: 워크숍 SOP (2시간)
+?뱴 ?⑤낫??援ъ“
+?쒋? Stage 1: 湲곕낯 ?댄빐 (1?쒓컙)
+?쒋? Stage 2: ?щ? & 臾명솕 (1?쒓컙)  
+?붴? Stage 3: ?뚰겕??SOP (2?쒓컙)
 
-💡 팁
-• 각 단계는 순서대로 진행하세요
-• 모르는 용어는 "용어사전"을 참고하세요
-• 질문이 있으면 "FAQ"를 확인하세요
-• 우측 상단의 "팀원 소개"를 읽고 팀을 알아보세요
+?뮕 ??
+??媛??④퀎???쒖꽌?濡?吏꾪뻾?섏꽭??
+??紐⑤Ⅴ???⑹뼱??"?⑹뼱?ъ쟾"??李멸퀬?섏꽭??
+??吏덈Ц???덉쑝硫?"FAQ"瑜??뺤씤?섏꽭??
+???곗륫 ?곷떒??"????뚭컻"瑜??쎄퀬 ????뚯븘蹂댁꽭??
 
-📅 일정
+?뱟 ?쇱젙
 Week 1: Stage 1 + Stage 2
 Week 2: Stage 3
-Week 3: 첫 프로젝트 참여 준비
+Week 3: 泥??꾨줈?앺듃 李몄뿬 以鍮?
 
-궁금한 점이 있으면 언제든 연락주세요!
+沅곴툑???먯씠 ?덉쑝硫??몄젣???곕씫二쇱꽭??
 
-[선임이름]
-[Slack/이메일/전화]
+[?좎엫?대쫫]
+[Slack/?대찓???꾪솕]
 ```
 
 ---
 
-## 📱 **QR 코드 생성**
+## ?벑 **QR 肄붾뱶 ?앹꽦**
 
-### 방법 1: 온라인 생성 (가장 쉬움) ✨
+### 諛⑸쾿 1: ?⑤씪???앹꽦 (媛???ъ?) ??
 ```
-1. https://qr-code-generator.com 접속
-2. 다음 URL 입력:
+1. https://qr-code-generator.com ?묒냽
+2. ?ㅼ쓬 URL ?낅젰:
    https://realwork-onboarding-kit.vercel.app
-3. "Generate QR Code" 클릭
-4. PNG 다운로드
-5. 이메일에 첨부 또는 인쇄해서 붙이기
+3. "Generate QR Code" ?대┃
+4. PNG ?ㅼ슫濡쒕뱶
+5. ?대찓?쇱뿉 泥⑤? ?먮뒗 ?몄뇙?댁꽌 遺숈씠湲?
 ```
 
 ---
 
-## 💬 **Slack 채널에 공지**
+## ?뮠 **Slack 梨꾨꼸??怨듭?**
 
 ```
-#온보딩 채널에 공지:
+#?⑤낫??梨꾨꼸??怨듭?:
 
-🎉 RealWork 온보딩 키트가 준비되었습니다!
+?럦 RealWork ?⑤낫???ㅽ듃媛 以鍮꾨릺?덉뒿?덈떎!
 
-📖 시작하기: https://realwork-onboarding-kit.vercel.app
+?뱰 ?쒖옉?섍린: https://realwork-onboarding-kit.vercel.app
 
-🔗 빠른 링크:
-• FAQ: https://realwork-onboarding-kit.vercel.app/faq
-• 팀 소개: https://realwork-onboarding-kit.vercel.app/team
-• 용어사전: https://realwork-onboarding-kit.vercel.app/glossary
+?뵕 鍮좊Ⅸ 留곹겕:
+??FAQ: https://realwork-onboarding-kit.vercel.app/faq
+??? ?뚭컻: https://realwork-onboarding-kit.vercel.app/team
+???⑹뼱?ъ쟾: https://realwork-onboarding-kit.vercel.app/glossary
 
-선임 여러분은 Mentor_Onboarding_Preparation.md를 참고하세요!
-```
-
----
-
-## 📊 **공유 방식별 체크리스트**
-
-### ✅ 이메일 공유
-```
-[ ] 배포 URL 확인
-[ ] 이메일 템플릿 준비
-[ ] QR 코드 다운로드
-[ ] 신입 이메일 주소 확인
-[ ] 메일 발송
-```
-
-### ✅ Slack 공지
-```
-[ ] #온보딩 채널 확인
-[ ] 공지 메시지 준비
-[ ] 링크 테스트
-[ ] 공지 발송
-```
-
-### ✅ 포스터/인쇄
-```
-[ ] QR 코드 고해상도 다운로드
-[ ] A4 포스터 디자인 (선택)
-[ ] 사무실에 인쇄해서 붙이기
-```
-
-### ✅ 노션 업데이트
-```
-[ ] 회사 노션 접근 권한 확인
-[ ] "새로운 팀원" 페이지에 링크 추가
-[ ] 설명 작성
-[ ] 팀원들에게 공지
+?좎엫 ?щ윭遺꾩? Mentor_Onboarding_Preparation.md瑜?李멸퀬?섏꽭??
 ```
 
 ---
 
-## 🎯 **신입이 보게 될 페이지**
+## ?뱤 **怨듭쑀 諛⑹떇蹂?泥댄겕由ъ뒪??*
 
-### 메인 페이지
+### ???대찓??怨듭쑀
 ```
-🎉 RealWork에 오신 것을 환영합니다!
-
-[START_HERE 버튼]
-├─ 환영 인사
-├─ 3단계 학습 로드맵  
-├─ 5가지 보조 자료
-└─ 추천 일정표
+[ ] 諛고룷 URL ?뺤씤
+[ ] ?대찓???쒗뵆由?以鍮?
+[ ] QR 肄붾뱶 ?ㅼ슫濡쒕뱶
+[ ] ?좎엯 ?대찓??二쇱냼 ?뺤씤
+[ ] 硫붿씪 諛쒖넚
 ```
 
-### 상단 네비게이션
+### ??Slack 怨듭?
+```
+[ ] #?⑤낫??梨꾨꼸 ?뺤씤
+[ ] 怨듭? 硫붿떆吏 以鍮?
+[ ] 留곹겕 ?뚯뒪??
+[ ] 怨듭? 諛쒖넚
+```
+
+### ???ъ뒪???몄뇙
+```
+[ ] QR 肄붾뱶 怨좏빐?곷룄 ?ㅼ슫濡쒕뱶
+[ ] A4 ?ъ뒪???붿옄??(?좏깮)
+[ ] ?щТ?ㅼ뿉 ?몄뇙?댁꽌 遺숈씠湲?
+```
+
+### ???몄뀡 ?낅뜲?댄듃
+```
+[ ] ?뚯궗 ?몄뀡 ?묎렐 沅뚰븳 ?뺤씤
+[ ] "?덈줈????? ?섏씠吏??留곹겕 異붽?
+[ ] ?ㅻ챸 ?묒꽦
+[ ] ??먮뱾?먭쾶 怨듭?
+```
+
+---
+
+## ?렞 **?좎엯??蹂닿쾶 ???섏씠吏**
+
+### 硫붿씤 ?섏씠吏
+```
+?럦 RealWork???ㅼ떊 寃껋쓣 ?섏쁺?⑸땲??
+
+[START_HERE 踰꾪듉]
+?쒋? ?섏쁺 ?몄궗
+?쒋? 3?④퀎 ?숈뒿 濡쒕뱶留? 
+?쒋? 5媛吏 蹂댁“ ?먮즺
+?붴? 異붿쿇 ?쇱젙??
+```
+
+### ?곷떒 ?ㅻ퉬寃뚯씠??
 ```
 Home | Stage 1 | Stage 2 | Stage 3 | FAQ | Team | Glossary | Cases | Mentor
 ```
 
-### 좌측 사이드바 (모바일에서는 햠버거 메뉴)
+### 醫뚯륫 ?ъ씠?쒕컮 (紐⑤컮?쇱뿉?쒕뒗 ?좊쾭嫄?硫붾돱)
 ```
-📖 START_HERE
-📚 Learning Path
-  ├─ Stage 1: 기본 이해
-  ├─ Stage 2: 사례 & 문화
-  └─ Stage 3: 워크숍 SOP
-❓ Resources
-  ├─ FAQ (30개)
-  ├─ 팀원 소개
-  ├─ 용어사전
-  └─ 사례 분석
-🎯 For Mentors
-  └─ 선임 준비 가이드
-```
-
----
-
-## 🔄 **배포 후 업데이트**
-
-### 월간 업데이트 절차
-```
-1. 신입 피드백 수집 (Google Form 또는 Slack)
-2. 문제 사항 정리
-3. 마크다운 파일 수정
-4. GitHub에 커밋
-5. Vercel 자동 배포 ✅
-```
-
-### 분기별 추가 사항
-```
-• 새로운 용어 3-5개 추가
-• 새로운 사례 1개 추가
-• FAQ 개선 (신입 질문 기반)
-• 팀원 정보 업데이트
+?뱰 START_HERE
+?뱴 Learning Path
+  ?쒋? Stage 1: 湲곕낯 ?댄빐
+  ?쒋? Stage 2: ?щ? & 臾명솕
+  ?붴? Stage 3: ?뚰겕??SOP
+??Resources
+  ?쒋? FAQ (30媛?
+  ?쒋? ????뚭컻
+  ?쒋? ?⑹뼱?ъ쟾
+  ?붴? ?щ? 遺꾩꽍
+?렞 For Mentors
+  ?붴? ?좎엫 以鍮?媛?대뱶
 ```
 
 ---
 
-## 📊 **배포 현황 확인**
+## ?봽 **諛고룷 ???낅뜲?댄듃**
 
-### Vercel 대시보드
+### ?붽컙 ?낅뜲?댄듃 ?덉감
 ```
-1. Vercel.com 로그인
-2. realwork-onboarding-kit 프로젝트 선택
-3. 배포 상태 확인
-4. 방문자 통계 확인
-```
-
-### GitHub 저장소
-```
-1. GitHub.com에서 저장소 확인
-2. Commits 히스토리 확인
-3. 최신 코드 확인
-4. README.md 업데이트
+1. ?좎엯 ?쇰뱶諛??섏쭛 (Google Form ?먮뒗 Slack)
+2. 臾몄젣 ?ы빆 ?뺣━
+3. 留덊겕?ㅼ슫 ?뚯씪 ?섏젙
+4. GitHub??而ㅻ컠
+5. Vercel ?먮룞 諛고룷 ??
 ```
 
----
-
-## ✨ **배포 완료 체크리스트**
-
-- [x] 콘텐츠 완성 (4개 핵심 파일 + 9개 학습 콘텐츠)
-- [x] 배포 설정 완료 (package.json, vercel.json, .gitignore)
-- [ ] GitHub 저장소 생성
-- [ ] Vercel 배포 실행
-- [ ] 배포 URL 확인
-- [ ] QR 코드 생성
-- [ ] 이메일 발송
-- [ ] Slack 공지
-- [ ] 신입 첫 접근 확인
+### 遺꾧린蹂?異붽? ?ы빆
+```
+???덈줈???⑹뼱 3-5媛?異붽?
+???덈줈???щ? 1媛?異붽?
+??FAQ 媛쒖꽑 (?좎엯 吏덈Ц 湲곕컲)
+??????뺣낫 ?낅뜲?댄듃
+```
 
 ---
 
-## 🎉 **축하합니다!**
+## ?뱤 **諛고룷 ?꾪솴 ?뺤씤**
 
-**RealWork 온보딩 키트가 세상에 나올 준비가 되었습니다!**
+### Vercel ??쒕낫??
+```
+1. Vercel.com 濡쒓렇??
+2. realwork-onboarding-kit ?꾨줈?앺듃 ?좏깮
+3. 諛고룷 ?곹깭 ?뺤씤
+4. 諛⑸Ц???듦퀎 ?뺤씤
+```
 
-### 지금 바로 할 수 있는 것:
-1. ✅ GitHub 저장소 생성
-2. ✅ Vercel 배포 (5분)
-3. ✅ 신입에게 공유 (이메일/Slack/QR)
-
-### 배포 후:
-1. 첫 신입 반응 확인
-2. 피드백 수집
-3. 월간 업데이트
-
----
-
-## 📞 **지원**
-
-문제가 발생하면:
-- 📖 DEPLOYMENT_GUIDE.md 참고
-- 🛠️ CLAUDE.md의 트러블슈팅 섹션 확인
-- 💬 GitHub Issues 등록
-- 📧 HR@realwork.group 연락
+### GitHub ??μ냼
+```
+1. GitHub.com?먯꽌 ??μ냼 ?뺤씤
+2. Commits ?덉뒪?좊━ ?뺤씤
+3. 理쒖떊 肄붾뱶 ?뺤씤
+4. README.md ?낅뜲?댄듃
+```
 
 ---
 
-**🚀 배포 시작하세요!**
+## ??**諛고룷 ?꾨즺 泥댄겕由ъ뒪??*
 
-**다음: GitHub → Vercel → 공유**
+- [x] 肄섑뀗痢??꾩꽦 (4媛??듭떖 ?뚯씪 + 9媛??숈뒿 肄섑뀗痢?
+- [x] 諛고룷 ?ㅼ젙 ?꾨즺 (package.json, vercel.json, .gitignore)
+- [ ] GitHub ??μ냼 ?앹꽦
+- [ ] Vercel 諛고룷 ?ㅽ뻾
+- [ ] 諛고룷 URL ?뺤씤
+- [ ] QR 肄붾뱶 ?앹꽦
+- [ ] ?대찓??諛쒖넚
+- [ ] Slack 怨듭?
+- [ ] ?좎엯 泥??묎렐 ?뺤씤
 
 ---
 
-**Created**: 2026년 11월 6일  
+## ?럦 **異뺥븯?⑸땲??**
+
+**RealWork ?⑤낫???ㅽ듃媛 ?몄긽???섏삱 以鍮꾧? ?섏뿀?듬땲??**
+
+### 吏湲?諛붾줈 ?????덈뒗 寃?
+1. ??GitHub ??μ냼 ?앹꽦
+2. ??Vercel 諛고룷 (5遺?
+3. ???좎엯?먭쾶 怨듭쑀 (?대찓??Slack/QR)
+
+### 諛고룷 ??
+1. 泥??좎엯 諛섏쓳 ?뺤씤
+2. ?쇰뱶諛??섏쭛
+3. ?붽컙 ?낅뜲?댄듃
+
+---
+
+## ?뱸 **吏??*
+
+臾몄젣媛 諛쒖깮?섎㈃:
+- ?뱰 DEPLOYMENT_GUIDE.md 李멸퀬
+- ?썱截?CLAUDE.md???몃윭釉붿뒋???뱀뀡 ?뺤씤
+- ?뮠 GitHub Issues ?깅줉
+- ?벁 HR@realwork.group ?곕씫
+
+---
+
+**?? 諛고룷 ?쒖옉?섏꽭??**
+
+**?ㅼ쓬: GitHub ??Vercel ??怨듭쑀**
+
+---
+
+**Created**: 2026??11??6?? 
 **Version**: 1.0.0  
-**Status**: ✅ Ready to Deploy  
+**Status**: ??Ready to Deploy  

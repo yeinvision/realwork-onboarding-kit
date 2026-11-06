@@ -1,188 +1,188 @@
-# 🚀 RealWork 온보딩 키트 배포 가이드
+﻿# ?? RealWork ?⑤낫???ㅽ듃 諛고룷 媛?대뱶
 
-## ✅ 완성된 파일 목록
+## ???꾩꽦???뚯씪 紐⑸줉
 
-### 핵심 4가지 파일 ⭐
+### ?듭떖 4媛吏 ?뚯씪 狩?
 ```
-✅ README.md              - 프로젝트 개요 및 진입점 (5.1KB)
-✅ PRD.md                 - 상세 요구사항 및 설계 (7.1KB)
-✅ current_status.md      - 진행 현황 (7.7KB)
-✅ CLAUDE.md              - 기술 구현 가이드 (7.4KB)
-```
-
-### 학습 콘텐츠 (4개)
-```
-✅ START_HERE.md          - 신입 홈페이지 (5.3KB)
-✅ Stage1_Basic_Understanding.md    - 1단계 (8.2KB)
-✅ Stage2_Company_Cases_Culture.md  - 2단계 (9.1KB)
-✅ Stage3_Workshop_SOP_Learning.md  - 3단계 (14.7KB)
+??README.md              - ?꾨줈?앺듃 媛쒖슂 諛?吏꾩엯??(5.1KB)
+??PRD.md                 - ?곸꽭 ?붽뎄?ы빆 諛??ㅺ퀎 (7.1KB)
+??current_status.md      - 吏꾪뻾 ?꾪솴 (7.7KB)
+??CLAUDE.md              - 湲곗닠 援ы쁽 媛?대뱶 (7.4KB)
 ```
 
-### 보조 자료 (5개)
+### ?숈뒿 肄섑뀗痢?(4媛?
 ```
-✅ FAQ_30Questions.md               - 자주 묻는 질문 (11.0KB)
-✅ Team_Members_Introduction.md     - 팀원 소개 (8.6KB)
-✅ Glossary_RealWork_Terms.md       - 용어사전 (13.3KB)
-✅ Project_Case_Study_Practice.md   - 사례 분석 (14.3KB)
-✅ Mentor_Onboarding_Preparation.md - 선임 가이드 (8.6KB)
+??START_HERE.md          - ?좎엯 ?덊럹?댁? (5.3KB)
+??Stage1_Basic_Understanding.md    - 1?④퀎 (8.2KB)
+??Stage2_Company_Cases_Culture.md  - 2?④퀎 (9.1KB)
+??Stage3_Workshop_SOP_Learning.md  - 3?④퀎 (14.7KB)
 ```
 
-### 배포 준비 파일 (3개)
+### 蹂댁“ ?먮즺 (5媛?
 ```
-✅ package.json           - Node.js 의존성
-✅ vercel.json           - Vercel 설정
-✅ .gitignore            - Git 무시 규칙
+??FAQ_30Questions.md               - ?먯＜ 臾삳뒗 吏덈Ц (11.0KB)
+??Team_Members_Introduction.md     - ????뚭컻 (8.6KB)
+??Glossary_RealWork_Terms.md       - ?⑹뼱?ъ쟾 (13.3KB)
+??Project_Case_Study_Practice.md   - ?щ? 遺꾩꽍 (14.3KB)
+??Mentor_Onboarding_Preparation.md - ?좎엫 媛?대뱶 (8.6KB)
+```
+
+### 諛고룷 以鍮??뚯씪 (3媛?
+```
+??package.json           - Node.js ?섏〈??
+??vercel.json           - Vercel ?ㅼ젙
+??.gitignore            - Git 臾댁떆 洹쒖튃
 ```
 
 ---
 
-## 📊 통계
+## ?뱤 ?듦퀎
 
-| 항목 | 수치 |
+| ??ぉ | ?섏튂 |
 |------|------|
-| **총 마크다운 파일** | 9개 |
-| **총 줄 수** | 3,065줄 |
-| **총 단어** | 9,916단어 |
-| **총 크기** | ~112KB |
-| **학습 시간** | 7-10시간 |
-| **FAQ 개수** | 30개 |
-| **용어 개수** | 40+ |
-| **사례 시나리오** | 3개 |
-| **팀원 정보** | 15명 |
+| **珥?留덊겕?ㅼ슫 ?뚯씪** | 9媛?|
+| **珥?以???* | 3,065以?|
+| **珥??⑥뼱** | 9,916?⑥뼱 |
+| **珥??ш린** | ~112KB |
+| **?숈뒿 ?쒓컙** | 7-10?쒓컙 |
+| **FAQ 媛쒖닔** | 30媛?|
+| **?⑹뼱 媛쒖닔** | 40+ |
+| **?щ? ?쒕굹由ъ삤** | 3媛?|
+| **????뺣낫** | 15紐?|
 
 ---
 
-## 🎯 다음 단계 (배포용)
+## ?렞 ?ㅼ쓬 ?④퀎 (諛고룷??
 
-### 1단계: GitHub 저장소 준비
+### 1?④퀎: GitHub ??μ냼 以鍮?
 ```bash
-# 1. GitHub에서 새 저장소 생성
+# 1. GitHub?먯꽌 ????μ냼 ?앹꽦
 # realwork-onboarding-kit
 
-# 2. 로컬에서 Git 초기화
+# 2. 濡쒖뺄?먯꽌 Git 珥덇린??
 cd /path/to/Onboarding
 git init
 git add .
-git commit -m "Initial commit: RealWork 온보딩 키트 v1.0"
+git commit -m "Initial commit: RealWork ?⑤낫???ㅽ듃 v1.0"
 
-# 3. GitHub에 푸시
+# 3. GitHub???몄떆
 git remote add origin https://github.com/YOUR-ORG/realwork-onboarding-kit.git
 git branch -M main
 git push -u origin main
 ```
 
-### 2단계: Vercel 배포
+### 2?④퀎: Vercel 諛고룷
 ```
-1. Vercel.com 접속 (또는 가입)
-2. "New Project" 클릭
-3. GitHub 저장소 선택 (realwork-onboarding-kit)
-4. "Deploy" 클릭
-5. 자동 배포 완료!
+1. Vercel.com ?묒냽 (?먮뒗 媛??
+2. "New Project" ?대┃
+3. GitHub ??μ냼 ?좏깮 (realwork-onboarding-kit)
+4. "Deploy" ?대┃
+5. ?먮룞 諛고룷 ?꾨즺!
 ```
 
-배포 후 URL: `https://realwork-onboarding-kit.vercel.app`
+諛고룷 ??URL: `https://realwork-onboarding-kit.vercel.app`
 
-### 3단계: QR 코드 생성
+### 3?④퀎: QR 肄붾뱶 ?앹꽦
 ```
-https://qr-code-generator.com에서
+https://qr-code-generator.com?먯꽌
 URL: https://realwork-onboarding-kit.vercel.app
-로 QR 코드 생성 및 다운로드
+濡?QR 肄붾뱶 ?앹꽦 諛??ㅼ슫濡쒕뱶
 ```
 
-### 4단계: 신입에게 공유
+### 4?④퀎: ?좎엯?먭쾶 怨듭쑀
 ```
-📱 QR 코드 이미지 또는 링크 전달:
+?벑 QR 肄붾뱶 ?대?吏 ?먮뒗 留곹겕 ?꾨떖:
    https://realwork-onboarding-kit.vercel.app
 
-📧 이메일 템플릿:
+?벁 ?대찓???쒗뵆由?
    ---
-   안녕하세요! [신입명]님
+   ?덈뀞?섏꽭?? [?좎엯紐???
    
-   리얼워크에 오신 것을 환영합니다! 🎉
+   由ъ뼹?뚰겕???ㅼ떊 寃껋쓣 ?섏쁺?⑸땲?? ?럦
    
-   아래 링크에서 온보딩 키트를 시작해주세요:
-   👉 https://realwork-onboarding-kit.vercel.app
+   ?꾨옒 留곹겕?먯꽌 ?⑤낫???ㅽ듃瑜??쒖옉?댁＜?몄슂:
+   ?몛 https://realwork-onboarding-kit.vercel.app
    
-   또는 QR 코드를 스캔해주세요.
+   ?먮뒗 QR 肄붾뱶瑜??ㅼ틪?댁＜?몄슂.
    
-   시간이 되실 때 편하게 Stage 1부터 시작하세요!
+   ?쒓컙???섏떎 ???명븯寃?Stage 1遺???쒖옉?섏꽭??
    ---
 ```
 
 ---
 
-## 🛠️ 로컬 개발 (선택사항)
+## ?썱截?濡쒖뺄 媛쒕컻 (?좏깮?ы빆)
 
-다음과 같이 로컬에서 테스트 가능합니다:
+?ㅼ쓬怨?媛숈씠 濡쒖뺄?먯꽌 ?뚯뒪??媛?ν빀?덈떎:
 
 ```bash
-# 1. 의존성 설치
+# 1. ?섏〈???ㅼ튂
 npm install
 
-# 2. 개발 서버 시작
+# 2. 媛쒕컻 ?쒕쾭 ?쒖옉
 npm run dev
 
-# 3. http://localhost:3000 접속
-# 자동으로 reload됩니다 (파일 수정 시)
+# 3. http://localhost:3000 ?묒냽
+# ?먮룞?쇰줈 reload?⑸땲??(?뚯씪 ?섏젙 ??
 
-# 4. 빌드 테스트
+# 4. 鍮뚮뱶 ?뚯뒪??
 npm run build
 npm start
 
-# 5. Ctrl+C로 종료
+# 5. Ctrl+C濡?醫낅즺
 ```
 
 ---
 
-## 📋 배포 체크리스트
+## ?뱥 諛고룷 泥댄겕由ъ뒪??
 
 ### Pre-Deployment
-- [x] README.md 완성
-- [x] PRD.md 완성
-- [x] current_status.md 완성
-- [x] CLAUDE.md 완성
-- [x] 모든 MD 파일 완성 (9개)
-- [x] package.json 작성
-- [x] vercel.json 작성
-- [x] .gitignore 작성
-- [ ] 최종 오타/링크 검증
-- [ ] 팀 선임 검토
+- [x] README.md ?꾩꽦
+- [x] PRD.md ?꾩꽦
+- [x] current_status.md ?꾩꽦
+- [x] CLAUDE.md ?꾩꽦
+- [x] 紐⑤뱺 MD ?뚯씪 ?꾩꽦 (9媛?
+- [x] package.json ?묒꽦
+- [x] vercel.json ?묒꽦
+- [x] .gitignore ?묒꽦
+- [ ] 理쒖쥌 ?ㅽ?/留곹겕 寃利?
+- [ ] ? ?좎엫 寃??
 
 ### Deployment
-- [ ] GitHub 저장소 생성
-- [ ] Vercel 계정 연동
-- [ ] 배포 실행
-- [ ] 배포 URL 확인
-- [ ] QR 코드 생성
-- [ ] 팀 공지
+- [ ] GitHub ??μ냼 ?앹꽦
+- [ ] Vercel 怨꾩젙 ?곕룞
+- [ ] 諛고룷 ?ㅽ뻾
+- [ ] 諛고룷 URL ?뺤씤
+- [ ] QR 肄붾뱶 ?앹꽦
+- [ ] ? 怨듭?
 
 ### Post-Deployment
-- [ ] 신입에게 링크 전달
-- [ ] 첫 신입 온보딩 시작
-- [ ] 피드백 수집
-- [ ] 월간 업데이트 일정 설정
+- [ ] ?좎엯?먭쾶 留곹겕 ?꾨떖
+- [ ] 泥??좎엯 ?⑤낫???쒖옉
+- [ ] ?쇰뱶諛??섏쭛
+- [ ] ?붽컙 ?낅뜲?댄듃 ?쇱젙 ?ㅼ젙
 
 ---
 
-## 📞 지원 및 연락
+## ?뱸 吏??諛??곕씫
 
-### 문제 발생 시
-1. **링크/렌더링 문제**: GitHub Issues 등록
-2. **콘텐츠 개선**: Slack #온보딩 채널
-3. **기술 문제**: 개발팀 연락
-4. **운영 절차**: HR 연락
-
----
-
-## 🎉 축하합니다!
-
-**RealWork 온보딩 키트 v1.0이 완성되었습니다!**
-
-이제 신입들이 자율적으로 학습하고, 선임들은 효율적으로 지원할 수 있는 
-체계적인 온보딩 시스템이 준비되었습니다! 🚀
+### 臾몄젣 諛쒖깮 ??
+1. **留곹겕/?뚮뜑留?臾몄젣**: GitHub Issues ?깅줉
+2. **肄섑뀗痢?媛쒖꽑**: Slack #?⑤낫??梨꾨꼸
+3. **湲곗닠 臾몄젣**: 媛쒕컻? ?곕씫
+4. **?댁쁺 ?덉감**: HR ?곕씫
 
 ---
 
-**Created**: 2026년 11월 6일
+## ?럦 異뺥븯?⑸땲??
+
+**RealWork ?⑤낫???ㅽ듃 v1.0???꾩꽦?섏뿀?듬땲??**
+
+?댁젣 ?좎엯?ㅼ씠 ?먯쑉?곸쑝濡??숈뒿?섍퀬, ?좎엫?ㅼ? ?⑥쑉?곸쑝濡?吏?먰븷 ???덈뒗 
+泥닿퀎?곸씤 ?⑤낫???쒖뒪?쒖씠 以鍮꾨릺?덉뒿?덈떎! ??
+
+---
+
+**Created**: 2026??11??6??
 **Version**: 1.0.0
-**Status**: Ready for Deployment ✅
+**Status**: Ready for Deployment ??
