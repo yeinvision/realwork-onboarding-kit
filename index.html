@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealWork ?ùÏ°¥ ?®Î≥¥???§Ìä∏</title>
+    <title>RealWork Onboarding Kit</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/highlight.js@11/dist/highlight.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/atom-one-dark.min.css">
@@ -40,7 +40,6 @@
             overflow-x: hidden;
         }
 
-        /* ========== LAYOUT ========== */
         .container {
             display: flex;
             min-height: 100vh;
@@ -63,7 +62,6 @@
             background: var(--bg);
         }
 
-        /* ========== SIDEBAR STYLING ========== */
         .logo-section {
             margin-bottom: 40px;
             padding-bottom: 30px;
@@ -124,7 +122,6 @@
             box-shadow: inset 4px 0 12px rgba(0, 212, 212, 0.1);
         }
 
-        /* ========== MAIN CONTENT ========== */
         .header {
             background: linear-gradient(135deg, rgba(0, 212, 212, 0.05) 0%, transparent 100%);
             border-bottom: 1px solid var(--border);
@@ -161,7 +158,6 @@
             backdrop-filter: blur(10px);
         }
 
-        /* ========== MARKDOWN STYLING ========== */
         #content h1 {
             font-size: 2.5em;
             color: var(--primary);
@@ -221,7 +217,7 @@
         }
 
         #content ul li:before {
-            content: "??";
+            content: "‚ñ∏ ";
             color: var(--primary);
             font-weight: bold;
             margin-right: 8px;
@@ -328,7 +324,6 @@
             margin: 40px 0;
         }
 
-        /* ========== LOADING & ERROR ========== */
         .loading {
             text-align: center;
             padding: 80px 40px;
@@ -350,7 +345,6 @@
             color: #ff8080;
         }
 
-        /* ========== SCROLLBAR ========== */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -368,7 +362,6 @@
             background: rgba(0, 212, 212, 0.5);
         }
 
-        /* ========== RESPONSIVE ========== */
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -418,27 +411,25 @@
 </head>
 <body>
     <div class="container">
-        <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="logo-section">
                 <div class="logo">
                     <img src="logo.png" alt="RealWork Logo">
                 </div>
-                <div class="logo-text">?ùÏ°¥ ?®Î≥¥???§Ìä∏</div>
+                <div class="logo-text">Onboarding Kit</div>
             </div>
             <div class="nav-menu" id="navMenu"></div>
         </div>
 
-        <!-- MAIN -->
         <div class="main">
             <div class="header">
-                <h1>?? RealWork ?ùÏ°¥ ?®Î≥¥???§Ìä∏</h1>
-                <p>?†ÏûÖ???ÑÌïú ?êÍ∏∞Ï£ºÎèÑ ?ôÏäµ ?åÎû´??/p>
+                <h1>RealWork Onboarding Kit</h1>
+                <p>Self-guided learning platform for new members</p>
             </div>
 
             <div class="content">
                 <div class="content-box">
-                    <div id="content" class="loading">Î°úÎî© Ï§?..</div>
+                    <div id="content" class="loading">Loading...</div>
                 </div>
             </div>
         </div>
@@ -446,20 +437,19 @@
 
     <script>
         const files = [
-            { name: '?ìñ README', path: 'README.md' },
-            { name: '1Ô∏è‚É£ 1?®Í≥Ñ', path: 'Stage1_Basic_Understanding.md' },
-            { name: '2Ô∏è‚É£ 2?®Í≥Ñ', path: 'Stage2_Company_Cases_Culture.md' },
-            { name: '3Ô∏è‚É£ 3?®Í≥Ñ', path: 'Stage3_Workshop_SOP_Learning.md' },
-            { name: '??FAQ', path: 'FAQ_30Questions.md' },
-            { name: '?ë• ?Ä ?åÍ∞ú', path: 'Team_Members_Introduction.md' },
-            { name: '?ìö ?©Ïñ¥?¨Ï†Ñ', path: 'Glossary_RealWork_Terms.md' },
-            { name: '?ìä ?ÑÎ°ú?ùÌä∏', path: 'Project_Case_Study_Practice.md' },
-            { name: '?éì ?¨ÏàòÏ§ÄÎπ?, path: 'Mentor_Onboarding_Preparation.md' },
+            { name: 'README', path: '00_START_HERE.txt' },
+            { name: '1. Stage 1', path: 'Stage1_Basic_Understanding.txt' },
+            { name: '2. Stage 2', path: 'Stage2_Company_Cases_Culture.txt' },
+            { name: '3. Stage 3', path: 'Stage3_Workshop_SOP_Learning.txt' },
+            { name: 'FAQ', path: 'FAQ_30Questions.txt' },
+            { name: 'Team', path: 'Team_Members_Introduction.txt' },
+            { name: 'Terms', path: 'Glossary_RealWork_Terms.txt' },
+            { name: 'Cases', path: 'Project_Case_Study_Practice.txt' },
+            { name: 'Mentor', path: 'Mentor_Onboarding_Preparation.txt' },
         ];
 
-        let currentFile = 'README.md';
+        let currentFile = '00_START_HERE.txt';
 
-        // ?§ÎπÑÍ≤åÏù¥??Î©îÎâ¥ ?ùÏÑ±
         const navMenu = document.getElementById('navMenu');
         files.forEach((file, idx) => {
             const btn = document.createElement('button');
@@ -470,27 +460,24 @@
             navMenu.appendChild(btn);
         });
 
-        // ?åÏùº Î°úÎìú
         async function loadFile(path, btn) {
             try {
-                document.getElementById('content').innerHTML = '<div class="loading">??Î°úÎî© Ï§?..</div>';
+                document.getElementById('content').innerHTML = '<div class="loading">Loading...</div>';
                 
-                // Î™®Îì† Î≤ÑÌäº ÎπÑÌôú?±Ìôî
                 document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 
                 currentFile = path;
 
                 const response = await fetch(path);
-                if (!response.ok) throw new Error(`?åÏùº??Ï∞æÏùÑ ???ÜÏäµ?àÎã§ (${response.status}): ${path}`);
+                if (!response.ok) throw new Error(`File not found (${response.status}): ${path}`);
 
-                const markdown = await response.text();
-                if (!markdown || markdown.trim() === '') throw new Error(`?åÏùº??ÎπÑÏñ¥?àÏäµ?àÎã§: ${path}`);
+                const text = await response.text();
+                if (!text || text.trim() === '') throw new Error(`File is empty: ${path}`);
 
-                const html = marked.parse(markdown);
+                const html = marked.parse(text);
                 document.getElementById('content').innerHTML = html;
 
-                // ÏΩîÎìú ?òÏù¥?ºÏù¥??
                 document.querySelectorAll('pre code').forEach(block => {
                     try {
                         hljs.highlightElement(block);
@@ -499,28 +486,24 @@
                     }
                 });
 
-                // ?§ÌÅ¨Î°??ÅÎã®?ºÎ°ú
                 document.querySelector('.main').scrollTop = 0;
 
             } catch (error) {
                 console.error('Load error:', error);
                 document.getElementById('content').innerHTML = `
                     <div class="error">
-                        <strong>???åÏùº Î°úÎìú ?§Ìå®</strong><br/>
+                        <strong>Error loading file</strong><br/>
                         ${error.message}<br/><br/>
-                        <small>Í≤ΩÎ°ú: ${path}</small>
+                        <small>Path: ${path}</small>
                     </div>
                 `;
             }
         }
 
-        // Ï¥àÍ∏∞ Î°úÎìú
         window.addEventListener('load', () => {
             const firstBtn = document.querySelector('.nav-item');
-            if (firstBtn) loadFile('README.md', firstBtn);
+            if (firstBtn) loadFile('00_START_HERE.txt', firstBtn);
         });
     </script>
 </body>
-<!-- v2 -->
 </html>
-
